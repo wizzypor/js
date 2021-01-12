@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.bodyCl {
+			background-color: red;
+			margin: 0;
+		}
+		.header {
+			height: 50px;
+			background-color: navy;
+		}
+		.cont {
+			margin-left: auto;
+			margin-right: auto;
+			width: 900px;
+			background-color: 
+		}
+		.headText {
+			color: brown;
+			margin-top: 0px;
+		}
+		.d_flex {
+			display: flex;
+		}
+		.block1 {
+			height: 500px;
+			width: 300px;
+			background-color: pink;
+		}
+		.block2 {
+			height: 500px;
+			width: 300px;
+			background-color: cyan;
+		}
+		.block3 {
+			height: 500px;
+			width: 300px;
+			background-color: green;
+		}
+		.img1 {
+			width: 300px;
+			margin-left: auto;
+			margin-right: auto;
+		}				
+		.img2 {
+			width: 300px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.img3 {
+			width: 300px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.link1 {
+			text-decoration: none;
+			color: white;
+		}
+		.link2 {
+			text-decoration: none;
+			color: red;
+		}
+		.link3 {
+			text-decoration: none;
+			color: cyan;
+		}
+		.btn1 {
+			background-color: yellow;
+			color: white;
+		}
+		.btn2 {
+			background-color: brown;
+		}
+		.btn3 {
+			background-color: pink;
+		}																		
+	</style>
+</head>
+<body class="bodyCl">
+	<!-- шапка -->
+	<div class="header">
+		<div class="cont">
+			<h1 class="headText">Новинки на рынке</h1>
+		</div>
+	</div>
+	<!-- контент -->
+	<div class="cont">
+		<div class="d_flex">	
+			<div class="block1">	
+				<img src="" class="img1">
+				<a href="" class="link1">Перейти на официальный сайт</a>
+				<button class="btn1">предзаказ</button>			
+			</div>
+			<div class="block2">
+				<img src="" class="img2">
+				<a href=""  class="link2">Перейти на официальный сайт</a>
+				<button class="btn2">предзаказ</button>						
+			</div>
+			<div class="block3">
+				<img src="" class="img3">
+				<a href=""  class="link3">Перейти на официальный сайт</a>
+				<button class="btn3">предзаказ</button>							
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		//задание 1 изменить фон body
+		document.querySelector('.bodyCl').style.background = 'gray';
+		//задание 2 изменить фон шапки
+		document.querySelector('.header').style.background = 'black';
+		//задание 3 текст передвинуть и поменять цвет
+		document.querySelector('.headText').style.color = 'gray';
+		document.querySelector('.headText').style.textAlign = 'right'
+		//задание 4 поставить картинки
+		document.querySelector('.img1').src = '1.jpg'
+		document.querySelector('.img2').src = '2.jpg'
+		document.querySelector('.img3').src = '3.png'
+		//задание 5 без картинки поставьте ссылки
+		document.querySelector('.link1').href = 'https://store.playstation.com/ru-ru/product/EP9000-CUSA13323_00-GHOSTSHIP0000000'
+		document.querySelector('.link2').href = 'https://store.playstation.com/ru-ru/product/EP1003-CUSA13275_00-DOOMETERNALBUNDL'
+		document.querySelector('.link3').href = 'https://www.playstation.com/ru-ru/games/cyberpunk-2077/'
+		//задание 6 передвинуть ссылки
+		document.querySelector('.link1').style.marginLeft = '45px'
+		document.querySelector('.link2').style.marginLeft = '45px'
+		document.querySelector('.link3').style.marginLeft = '45px'
+		//задание 7 поменять фон блоков
+		document.querySelector('.block1').style.background = 'blue'
+		document.querySelector('.block2').style.background = 'orange'
+		document.querySelector('.block3').style.background = 'yellow'
+		//задание 8 перекрасить кнопки
+		document.querySelector('.btn1').style.background = 'black'
+		document.querySelector('.btn2').style.background = 'skyblue'
+		document.querySelector('.btn3').style.background = 'pink'
+
+	</script>
+</body>
+</html>
